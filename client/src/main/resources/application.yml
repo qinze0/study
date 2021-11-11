@@ -1,8 +1,18 @@
 spring:
   application:
     name: study
-    port: 9001
   http:
     encoding:
       charset: UTF-8
       enabled: true
+
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-connections: 500
+    min-spare-threads: 25
+    max-threads: 300
+    accept-count: 200
+  port: 9001
+  servlet:
+    context-path: /study
