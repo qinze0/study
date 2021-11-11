@@ -6,6 +6,8 @@
     <modules>
         <module>client</module>
 		<module>common</module>
+		<module>server</module>
+		<module>dto</module>
 	</modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
@@ -41,6 +43,24 @@
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
+			<!--study-->
+			<dependency>
+				<groupId>com.qinze</groupId>
+				<artifactId>common</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.qinze</groupId>
+				<artifactId>dto</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.qinze</groupId>
+				<artifactId>server</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<!--study-->
+
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
